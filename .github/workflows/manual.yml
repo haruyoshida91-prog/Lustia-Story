@@ -37,3 +37,14 @@ jobs:
       with:
         name: app-${{ inputs.build_type }}.apk
         path: app/build/outputs/apk/${{ inputs.build_type }}/app-${{ inputs.build_type }}.apk
+
+    - name: Generate APK download link
+      run: |
+        echo "## APK Build Successful ✅" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Build Type:** ${{ inputs.build_type }}" >> $GITHUB_STEP_SUMMARY
+        echo "**APK Name:** app-${{ inputs.build_type }}.apk" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "📥 **Download APK:** [app-${{ inputs.build_type }}.apk](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "The APK artifact is available in the **Artifacts** section of this workflow run." >> $GITHUB_STEP_SUMMARY
