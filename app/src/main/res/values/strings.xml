@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lustia Story</string>
+    <string name="continue_button">Continue</string>
+    <string name="choice_button">Choose</string>
+    <string name="stats_title">Stats</string>
+    <string name="inventory_title">Inventory</string>
+    <string name="save_game">Save Game</string>
+    <string name="load_game">Load Game</string>
+</resources>
