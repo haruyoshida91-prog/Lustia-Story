@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preferences xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Switch
+        android:key="pref_allow_sexual"
+        android:title="Allow sexual content"
+        android:summary="Enable to show sexual/NSFW scenes"
+        android:defaultValue="false" />
+
+    <Switch
+        android:key="pref_allow_nsfw"
+        android:title="Allow NSFW content"
+        android:summary="Enable to show all NSFW scenes"
+        android:defaultValue="false" />
+
+</preferences>
